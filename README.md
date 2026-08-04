@@ -130,12 +130,11 @@
 
 ```bash
 # 1. 리포지토리 클론 및 폴더 이동
-git clone [https://github.com/ParkMinhyoung/FIELD-CAMP-1st-Place.git](https://github.com/ParkMinhyoung/FIELD-CAMP-1st-Place.git)
+git clone https://github.com/ParkMinhyoung/FIELD-CAMP-1st-Place.git
 cd FIELD-CAMP-1st-Place
 
 # 2. 필수 라이브러리 일괄 설치
 pip install pandas numpy lightgbm optuna scikit-learn gurobipy matplotlib seaborn jupyter
----
 🚀 How to Run (실행 순서)
 모든 데이터 파일과 실행 노트북이 루트 디렉토리에 위치해 있으므로, 클론 후 아래 순서대로 실행하시면 됩니다.
 
