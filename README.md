@@ -38,12 +38,12 @@
 | **머신러닝 / 예측** | LightGBM, Optuna, Scikit-learn |
 | **수리 최적화** | Gurobi (`gurobipy`) |
 | **시각화** | Matplotlib, Seaborn |
-```
+
 ---
 
 ## 3. 디렉토리 구조
 
-```text
+text
 ├── data/
 │   ├── train_1월_11월_.csv             # Phase 2 학습용 SCADA 데이터
 │   ├── train_12월_.csv                 # Phase 2 평가/예측 대상 데이터
@@ -56,7 +56,7 @@
 │   ├── Phase2_Task2_평가셋예측.csv      # Phase 2 최종 예측 결과
 │   └── phase3_outputs/                # Phase 3 최종 부지 리포트 및 시각화 그래프
 └── README.md                          # 프로젝트 안내 문서
-```
+
 ---
 
 ## 4. 파이프라인 상세
