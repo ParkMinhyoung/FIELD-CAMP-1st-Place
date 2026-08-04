@@ -133,7 +133,7 @@ cd FIELD-CAMP-1st-Place
 
 # 2. 필요 패키지 일괄 설치
 pip install pandas numpy lightgbm optuna scikit-learn gurobipy matplotlib seaborn jupyter
-
+```
 ### 🚀 2. 파이프라인 실행 가이드 (Execution Pipeline)
 
 > **💡 Tip**: 실행 파일명(링크)을 클릭하면 깃허브 내 해당 노트북 코드 화면으로 이동합니다.
@@ -142,7 +142,7 @@ pip install pandas numpy lightgbm optuna scikit-learn gurobipy matplotlib seabor
 | :---: | :--- | :--- | :--- | :--- |
 | **Phase 2** | **풍력 발전량 예측** | 📄 [`Phase2_Task2_코드 파일_14B.ipynb`](<./Phase2_Task2_코드 파일_14B.ipynb>) | `train(1월~11월).csv`<br>`train(12월).csv` | 12월 10분 단위 유효전력생산량 예측 CSV |
 | **Phase 3** | **입지 & ESS 최적화** | 📄 [`Phase3_최적화 코드 파일_14B.ipynb`](<./Phase3_최적화 코드 파일_14B.ipynb>) | `terrain_grid_100m.csv`<br>`substation_locations.csv`<br>`gyeongju_boundary.csv` | AI 데이터센터 최적 부지 리포트 & ESS 시뮬레이션 |
-
+```
 ### 🖥️ 3. CLI 터미널 실행 (선택 사항)
 
 주피터 UI 없이 터미널(cmd)에서 명령어로 직접 자동 실행할 때 사용합니다.
