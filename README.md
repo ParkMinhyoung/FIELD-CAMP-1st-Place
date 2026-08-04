@@ -160,3 +160,4 @@ jupyter nbconvert --to notebook --execute "Phase2_Task2_코드 파일_14B.ipynb"
 
 # Phase 3 노트북 커널 실행
 jupyter nbconvert --to notebook --execute "Phase3_최적화 코드 파일_14B.ipynb"
+```
