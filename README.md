@@ -38,7 +38,7 @@
 | **머신러닝 / 예측** | LightGBM, Optuna, Scikit-learn |
 | **수리 최적화** | Gurobi (`gurobipy`) |
 | **시각화** | Matplotlib, Seaborn |
-
+```
 ---
 
 ## 3. 디렉토리 구조
