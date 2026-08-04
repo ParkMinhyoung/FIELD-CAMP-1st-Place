@@ -116,18 +116,47 @@
    - 겨울철 데이터 부재로 인해 단순 CV 점수에만 의존할 경우 오버피팅 발생 위험 확인. 실증 테스트 NMAE를 지속 점검하여 과도한 복잡도를 가진 v9 모델 대신 일반화 성능이 뛰어난 v6 모델을 선별 채택함.
 
 ---
-
-markdown
 ## 6. 환경 설정 및 실행 방법
 
 ### ⚙️ Prerequisites
 
-- Python 3.12 이상
-- **Gurobi Optimizer**: Phase 3 실행을 위해 유효한 Gurobi 라이선스(Academic/Commercial) 설치 필요
+- **Python**: 3.12 이상
+- **Jupyter Environment**: Jupyter Lab, Jupyter Notebook, 또는 VS Code
+- **Gurobi Optimizer**: Phase 3 최적화 실행을 위해 유효한 Gurobi 라이선스(Academic/Commercial) 설치 필요
 
 ### 💻 Installation
 
 ```bash
+# 1. 리포지토리 클론 및 이동
 git clone [https://github.com/ParkMinhyoung/FIELD-CAMP-1st-Place.git](https://github.com/ParkMinhyoung/FIELD-CAMP-1st-Place.git)
 cd FIELD-CAMP-1st-Place
-pip install pandas numpy lightgbm optuna scikit-learn gurobipy matplotlib seaborn
+
+# 2. 필수 패키지 설치
+pip install pandas numpy lightgbm optuna scikit-learn gurobipy matplotlib seaborn jupyter
+markdown
+🚀 How to Run
+모든 데이터 파일과 노트북이 프로젝트 루트 경로에 위치해 있으므로 클론 후 즉시 순차 실행 가능합니다.
+
+1️⃣ Phase 2: 풍력 발전량 예측 모델링
+Jupyter Notebook 또는 VS Code에서 Phase2_Task2_코드 파일_14B.ipynb 실행
+
+전체 셀 실행 (Run All 또는 Shift + Enter)
+
+입력 데이터: train(1월~11월).csv, train(12월).csv
+
+결과 확인: 실행 완료 시 Phase 2 예측 결과 파일이 자동 생성됩니다.
+
+2️⃣ Phase 3: AI 데이터센터 입지 및 ESS 최적화
+Phase3_최적화 코드 파일_14B.ipynb 실행
+
+전체 셀 실행 (Run All 또는 Shift + Enter)
+
+입력 데이터: terrain_grid_100m.csv, substation_locations.csv, gyeongju_boundary.csv
+
+결과 확인: 최적 부지 선정, ESS 용량 시뮬레이션 및 시각화 결과가 출력됩니다.
+
+jupyter nbconvert --to notebook --execute "Phase2_Task2_코드 파일_14B.ipynb"
+jupyter nbconvert --to notebook --execute "Phase3_최적화 코드 파일_14B.ipynb"
+
+```
+---
