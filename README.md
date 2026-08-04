@@ -120,9 +120,9 @@
 
 ### ⚙️ Prerequisites
 
-- **Python**: 3.12 이상 권장
-- **Jupyter Environment**: Jupyter Lab, Jupyter Notebook, 또는 VS Code
-- **Gurobi Optimizer**: Phase 3 수리 최적화 실행을 위한 Gurobi 라이선스 (Academic/Commercial)
+* **Python**: 3.12 이상 권장
+* **Jupyter Environment**: Jupyter Lab, Jupyter Notebook, 또는 VS Code
+* **Gurobi Optimizer**: Phase 3 수리 최적화 실행을 위한 Gurobi 라이선스 (Academic/Commercial)
 
 ---
 
@@ -135,7 +135,6 @@ cd FIELD-CAMP-1st-Place
 
 # 2. 필수 라이브러리 일괄 설치
 pip install pandas numpy lightgbm optuna scikit-learn gurobipy matplotlib seaborn jupyter
-```
 🚀 How to Run (실행 순서)
 모든 데이터 파일과 실행 노트북이 루트 디렉토리에 위치해 있으므로, 클론 후 아래 순서대로 실행하시면 됩니다.
 
