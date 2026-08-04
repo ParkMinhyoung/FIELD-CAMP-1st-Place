@@ -44,7 +44,6 @@
 ## 3. 디렉토리 구조
 
 ```text
-
 ├── data/
 │   ├── train_1월_11월_.csv             # Phase 2 학습용 SCADA 데이터
 │   ├── train_12월_.csv                 # Phase 2 평가/예측 대상 데이터
