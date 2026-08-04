@@ -77,7 +77,7 @@
 
 3. **Data Leakage 차단 및 검증 전략**
    - **Leakage 변수 제거**: `op_switch`, `forced_stop_min`, `normal_op_min` 등 예측 시점 이후에만 알 수 있는 사후 집계 컬럼 제거.
-   - **Walk-forward CV**: 시계열 구조에 맞춰 Walk-forward Cross-Validation (1~8월 학습 → 9월 검증 - 1~9월 학습 → 10월 검증 등) 구축.
+   - **Walk-forward CV**: 시계열 구조에 맞춰 Walk-forward Cross-Validation (1-8월 학습 → 9월 검증 , 1-9월 학습 → 10월 검증 등) 구축.
 
 4. **특수 패턴 발굴 및 모델 채택**
    - **70일 정비 주기 패턴**: 100시간 이상 무발전 구간 전수 분석 결과 70일 주기 정비 패턴(5/20, 7/29, 10/7 → 12/16 정비) 발굴 및 위상 피처 반영.
