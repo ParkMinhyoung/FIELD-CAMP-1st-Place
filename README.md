@@ -127,6 +127,6 @@
 ### 💻 Installation
 
 ```bash
-git clone [https://github.com/your-username/your-repo-name.git](https://github.com/your-username/your-repo-name.git)
+git clone [https://github.com/your-username/your-repo-name.git] Phase3_최적화 코드 파일_14B.ipynb
 cd your-repo-name
 pip install pandas numpy lightgbm optuna scikit-learn gurobipy matplotlib seaborn
