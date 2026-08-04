@@ -117,6 +117,7 @@
 
 ---
 
+markdown
 ## 6. 환경 설정 및 실행 방법
 
 ### ⚙️ Prerequisites
@@ -127,6 +128,6 @@
 ### 💻 Installation
 
 ```bash
-git clone [(https://github.com/ParkMinhyoung/FIELD-CAMP-1st-Place/blob/main/Phase2_Task2_%EC%BD%94%EB%93%9C%20%ED%8C%8C%EC%9D%BC_14B.ipynb)] Phase3_최적화 코드 파일_14B.ipynb
-cd your-repo-name
+git clone [https://github.com/ParkMinhyoung/FIELD-CAMP-1st-Place.git](https://github.com/ParkMinhyoung/FIELD-CAMP-1st-Place.git)
+cd FIELD-CAMP-1st-Place
 pip install pandas numpy lightgbm optuna scikit-learn gurobipy matplotlib seaborn
