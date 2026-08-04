@@ -136,8 +136,6 @@ cd FIELD-CAMP-1st-Place
 # 2. 필수 라이브러리 일괄 설치
 pip install pandas numpy lightgbm optuna scikit-learn gurobipy matplotlib seaborn jupyter
 
-```
-
 🚀 How to Run (실행 순서)
 💡 **파일명(파란색 링크)**을 클릭하면 깃허브에서 주피터 노트북 코드를 바로 확인하실 수 있습니다.
 
