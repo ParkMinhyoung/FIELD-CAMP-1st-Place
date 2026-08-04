@@ -118,7 +118,6 @@
 ---
 ## 6. 🛠️ 환경 설정 및 실행 방법 (How to Run)
 
-> [!NOTE]
 > 본 프로젝트는 **Python 3.12+** 및 **Gurobi Optimizer** (Academic / Commercial License) 환경에서 작성되었습니다.
 
 ---
@@ -129,12 +128,11 @@
 
 ```bash
 # 1. 리포지토리 클론 & 폴더 이동
-git clone [https://github.com/ParkMinhyoung/FIELD-CAMP-1st-Place.git](https://github.com/ParkMinhyoung/FIELD-CAMP-1st-Place.git)
+git clone https://github.com/ParkMinhyoung/FIELD-CAMP-1st-Place.git
 cd FIELD-CAMP-1st-Place
 
 # 2. 필요 패키지 일괄 설치
 pip install pandas numpy lightgbm optuna scikit-learn gurobipy matplotlib seaborn jupyter
-```
 
 ### 🚀 2. 파이프라인 실행 가이드 (Execution Pipeline)
 
