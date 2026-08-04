@@ -116,51 +116,40 @@
    - 겨울철 데이터 부재로 인해 단순 CV 점수에만 의존할 경우 오버피팅 발생 위험 확인. 실증 테스트 NMAE를 지속 점검하여 과도한 복잡도를 가진 v9 모델 대신 일반화 성능이 뛰어난 v6 모델을 선별 채택함.
 
 ---
-## 6. 환경 설정 및 실행 방법
+## 6. 🛠️ 환경 설정 및 실행 방법 (How to Run)
 
-### ⚙️ Prerequisites
-
-* **Python**: 3.12 이상 권장
-* **Jupyter Environment**: Jupyter Lab, Jupyter Notebook, 또는 VS Code
-* **Gurobi Optimizer**: Phase 3 수리 최적화 실행을 위한 Gurobi 라이선스 (Academic/Commercial)
+> [!NOTE]
+> 본 프로젝트는 **Python 3.12+** 및 **Gurobi Optimizer** (Academic / Commercial License) 환경에서 작성되었습니다.
 
 ---
 
-### 💻 Installation & Setup
+### 💻 1. 설치 및 환경 구축 (Installation)
+
+터미널(Cmd 또는 Git Bash)에서 아래 명령어를 순서대로 실행합니다.
 
 ```bash
-# 1. 리포지토리 클론 및 폴더 이동
+# 1. 리포지토리 클론 & 폴더 이동
 git clone [https://github.com/ParkMinhyoung/FIELD-CAMP-1st-Place.git](https://github.com/ParkMinhyoung/FIELD-CAMP-1st-Place.git)
 cd FIELD-CAMP-1st-Place
 
-# 2. 필수 라이브러리 일괄 설치
+# 2. 필요 패키지 일괄 설치
 pip install pandas numpy lightgbm optuna scikit-learn gurobipy matplotlib seaborn jupyter
 ```
----
 
-🚀 How to Run (실행 순서)
-모든 데이터 파일과 실행 노트북이 루트 디렉토리에 위치해 있으므로, 클론 후 아래 순서대로 실행하시면 됩니다.
+### 🚀 2. 파이프라인 실행 가이드 (Execution Pipeline)
 
-1️⃣ Phase 2: 풍력 발전량 예측 모델링
-실행 파일: Phase2_Task2_코드 파일_14B.ipynb (클릭 시 코드로 이동)
+> **💡 Tip**: 실행 파일명(링크)을 클릭하면 깃허브 내 해당 노트북 코드 화면으로 이동합니다.
 
-입력 데이터: train(1월~11월).csv, train(12월).csv
+| 단계 | 주요 과제 | 실행 파일 (`.ipynb`) | 필요 입력 데이터 | 최종 출력 결과물 |
+| :---: | :--- | :--- | :--- | :--- |
+| **Phase 2** | **풍력 발전량 예측** | 📄 [`Phase2_Task2_코드 파일_14B.ipynb`](<./Phase2_Task2_코드 파일_14B.ipynb>) | `train(1월~11월).csv`<br>`train(12월).csv` | 12월 10분 단위 유효전력생산량 예측 CSV |
+| **Phase 3** | **입지 & ESS 최적화** | 📄 [`Phase3_최적화 코드 파일_14B.ipynb`](<./Phase3_최적화 코드 파일_14B.ipynb>) | `terrain_grid_100m.csv`<br>`substation_locations.csv`<br>`gyeongju_boundary.csv` | AI 데이터센터 최적 부지 리포트 & ESS 시뮬레이션 |
 
-실행 방법: 주피터 환경에서 열어 전체 셀 실행 (Shift + Enter 또는 Run All)
+### 🖥️ 3. CLI 터미널 실행 (선택 사항)
 
-출력 결과: 12월 10분 단위 유효전력생산량 예측 결과 데이터 자동 생성
+주피터 UI 없이 터미널(cmd)에서 명령어로 직접 자동 실행할 때 사용합니다.
 
-2️⃣ Phase 3: AI 데이터센터 입지 및 ESS 최적화
-실행 파일: Phase3_최적화 코드 파일_14B.ipynb (클릭 시 코드로 이동)
-
-입력 데이터: terrain_grid_100m.csv, substation_locations.csv, gyeongju_boundary.csv
-
-실행 방법: 주피터 환경에서 열어 전체 셀 실행 (Shift + Enter 또는 Run All)
-
-출력 결과: 경주시 AI 데이터센터 최적 부지 리포트, ESS 용량 시뮬레이션 및 지도 시각화 출력
-
-CLI 터미널 실행 (선택사항)
-주피터 UI 없이 터미널(cmd)에서 직접 자동 실행을 원할 경우 아래 명령어를 입력합니다.
+```bash
 # Phase 2 노트북 커널 실행
 jupyter nbconvert --to notebook --execute "Phase2_Task2_코드 파일_14B.ipynb"
 
