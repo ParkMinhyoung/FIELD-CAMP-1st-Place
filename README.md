@@ -123,7 +123,8 @@
 4. **Data Leakage 차단 및 모델 검증 (Walk-forward CV)**
    - `op_switch`, `forced_stop_min` 등 과거 타겟값을 내포하거나 사후에만 알 수 있는 집계 컬럼을 원천 제외하여 Data Leakage 차단.
    - 시계열 구조에 맞춘 Walk-forward CV 검증 수행 및 최종 실증 평가셋(12월) 기준 **v6 모델 (NMAE 0.0934)** 최종 채택.
----
+
+---  
 
 ### 🏛️ Phase 3: AI 데이터센터 입지 및 ESS 최적화
 
@@ -169,12 +170,11 @@
 터미널(Cmd 또는 Git Bash)에서 아래 명령어를 순서대로 실행합니다.
 ```bash
 # 1. 리포지토리 클론 & 폴더 이동
-git clone https://github.com/ParkMinhyoung/FIELD-CAMP-1st-Place.git 
+git clone https://github.com/ParkMinhyoung/FIELD-CAMP-1st-Place.git
 cd FIELD-CAMP-1st-Place
 
 # 2. 필요 패키지 일괄 설치
 pip install pandas numpy lightgbm optuna scikit-learn gurobipy matplotlib seaborn jupyter
-
 ```
 
 ---
