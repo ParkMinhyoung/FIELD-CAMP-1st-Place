@@ -62,23 +62,13 @@
 
 ## 2. 기술 스택
 
-
-
 | 구 분 | 기술 / 라이브러리 |
-
 | :--- | :--- |
-
 | **언어** | Python 3.12+ |
-
 | **데이터 처리** | Pandas, NumPy |
-
 | **머신러닝 / 예측** | LightGBM, Optuna, Scikit-learn |
-
 | **수리 최적화** | Gurobi (`gurobipy`) |
-
 | **시각화** | Matplotlib, Seaborn |
-
-
 
 ---
 
