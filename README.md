@@ -76,12 +76,12 @@
 
 3. **Data Leakage 차단 및 검증 전략**
    - **Leakage 변수 제거**: `op_switch`, `forced_stop_min`, `normal_op_min` 등 예측 시점 이후에만 알 수 있는 사후 집계 컬럼 제거.
-   - **Walk-forward CV**: 시계열 구조에 맞춰 Walk-forward Cross-Validation (1-8월 학습 → 9월 검증 , 1-9월 학습 → 10월 검증 등) 구축.
+   - **Walk-forward CV**: 시계열 구조에 맞춰 Walk-forward Cross-Validation (1-8월 학습 → 9월 검증, 1-9월 학습 → 10월 검증 등) 구축.
 
 4. **특수 패턴 발굴 및 모델 채택**
    - **70일 정비 주기 패턴**: 100시간 이상 무발전 구간 전수 분석 결과 70일 주기 정비 패턴(5/20, 7/29, 10/7 → 12/16 정비) 발굴 및 위상 피처 반영.
    - **극저온 성능 저하**: -10℃ 이하 극저온 환경에서의 출력 저하 패턴 반영 (`extreme_cold_flag`, `cold_severity`).
-   - **최종 모델 (v6)**: 실증 평가셋(12월) 기준 <b>v6 모델(NMAE 0.0934)</b>을 최종 제출 모델로 채택.
+   - **최종 모델 (v6)**: 실증 평가셋(12월) 기준 **v6 모델(NMAE 0.0934)**을 최종 제출 모델로 채택.
 
 ---
 
@@ -116,8 +116,10 @@
    - 겨울철 데이터 부재로 인해 단순 CV 점수에만 의존할 경우 오버피팅 발생 위험 확인. 실증 테스트 NMAE를 지속 점검하여 과도한 복잡도를 가진 v9 모델 대신 일반화 성능이 뛰어난 v6 모델을 선별 채택함.
 
 ---
+
 ## 6. 🛠️ 환경 설정 및 실행 방법 (How to Run)
 
+> [!NOTE]
 > 본 프로젝트는 **Python 3.12+** 및 **Gurobi Optimizer** (Academic / Commercial License) 환경에서 작성되었습니다.
 
 ---
@@ -128,12 +130,15 @@
 
 ```bash
 # 1. 리포지토리 클론 & 폴더 이동
-git clone https://github.com/ParkMinhyoung/FIELD-CAMP-1st-Place.git
+git clone [https://github.com/ParkMinhyoung/FIELD-CAMP-1st-Place.git](https://github.com/ParkMinhyoung/FIELD-CAMP-1st-Place.git)
 cd FIELD-CAMP-1st-Place
 
 # 2. 필요 패키지 일괄 설치
 pip install pandas numpy lightgbm optuna scikit-learn gurobipy matplotlib seaborn jupyter
 ```
+
+---
+
 ### 🚀 2. 파이프라인 실행 가이드 (Execution Pipeline)
 
 > **💡 Tip**: 실행 파일명(링크)을 클릭하면 깃허브 내 해당 노트북 코드 화면으로 이동합니다.
@@ -142,7 +147,9 @@ pip install pandas numpy lightgbm optuna scikit-learn gurobipy matplotlib seabor
 | :---: | :--- | :--- | :--- | :--- |
 | **Phase 2** | **풍력 발전량 예측** | 📄 [`Phase2_Task2_코드 파일_14B.ipynb`](<./Phase2_Task2_코드 파일_14B.ipynb>) | `train(1월~11월).csv`<br>`train(12월).csv` | 12월 10분 단위 유효전력생산량 예측 CSV |
 | **Phase 3** | **입지 & ESS 최적화** | 📄 [`Phase3_최적화 코드 파일_14B.ipynb`](<./Phase3_최적화 코드 파일_14B.ipynb>) | `terrain_grid_100m.csv`<br>`substation_locations.csv`<br>`gyeongju_boundary.csv` | AI 데이터센터 최적 부지 리포트 & ESS 시뮬레이션 |
-```
+
+---
+
 ### 🖥️ 3. CLI 터미널 실행 (선택 사항)
 
 주피터 UI 없이 터미널(cmd)에서 명령어로 직접 자동 실행할 때 사용합니다.
@@ -153,3 +160,4 @@ jupyter nbconvert --to notebook --execute "Phase2_Task2_코드 파일_14B.ipynb"
 
 # Phase 3 노트북 커널 실행
 jupyter nbconvert --to notebook --execute "Phase3_최적화 코드 파일_14B.ipynb"
+```
