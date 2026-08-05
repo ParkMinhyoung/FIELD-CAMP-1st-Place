@@ -83,37 +83,21 @@
 ---
 
 
-
 ## 3. 디렉토리 구조
 
-
-
 ```text
-
 ├── data/
-
-│   ├── train_1월_11월_.csv                 # Phase 2 학습용 SCADA 데이터
-
-│   ├── train_12월_.csv                     # Phase 2 평가/예측 대상 데이터
-
+│   ├── train(1월~11월).csv                # Phase 2 학습용 SCADA 데이터
+│   ├── train(12월).csv                    # Phase 2 평가/예측 대상 데이터
 │   ├── terrain_grid_100m.csv              # 경주시 100m x 100m 격자 데이터
-
 │   ├── substation_locations.csv           # 변전소 위치 및 Capacity 데이터
-
 │   └── gyeongju_boundary.csv              # 경주시 지리적 경계 데이터
-
-├── Phase2_Task2_LGBM_Prediction.ipynb     # Phase 2 풍력 발전량 예측 노트북
-
-├── Phase3_Siting_ESS_Optimization.ipynb   # Phase 3 입지 및 ESS 최적화 노트북
-
+├── Phase2_Task2_코드 파일_14B.ipynb        # Phase 2 풍력 발전량 예측 노트북
+├── Phase3_최적화 코드 파일_14B.ipynb       # Phase 3 입지 및 ESS 최적화 노트북
 ├── outputs/
-
-│   ├── Phase2_Task2_평가셋예측.csv          # Phase 2 최종 예측 결과
-
+│   ├── Phase2_Task2_평가셋예측.csv         # Phase 2 최종 예측 결과
 │   └── phase3_outputs/                    # Phase 3 최종 부지 리포트 및 시각화 그래프
-
 └── README.md                              # 프로젝트 안내 문서
-
 ```
 
 ---
