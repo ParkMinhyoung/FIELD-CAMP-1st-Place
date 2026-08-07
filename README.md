@@ -78,27 +78,29 @@
 
 
 
-## 4. 파이프라인 상세
-
 ```mermaid
-%%{init: {'flowchart': {'rankSpacing': 25, 'nodeSpacing': 30}}}%%
-flowchart TD
+flowchart LR
     subgraph Phase 1 [Phase 1: 물리 법칙 기반 데이터 역추적]
+        direction TB
         A["SCADA 및 기상<br>블라인드 데이터"] --> B("물리 법칙 기반<br>데이터 역추적")
         B --> C("익명화 마스킹<br>컬럼 재식별")
     end
 
     subgraph Phase 2 [Phase 2: 풍력 발전량 예측]
-        C --> D("도메인 지식 기반<br>피처 엔지니어링")
-        D --> E("LightGBM 활용<br>발전량 예측 모델링")
+        direction TB
+        D("도메인 지식 기반<br>피처 엔지니어링") --> E("LightGBM 활용<br>발전량 예측 모델링")
         E --> F["12월 10분 단위<br>풍력 잉여전력 도출"]
     end
 
     subgraph Phase 3 [Phase 3: 입지 및 ESS 최적화]
-        F --> G("경주시 100m 격자 공간<br>필터링 및 후보지 도출")
-        G --> H("Gurobi Multi-Stage<br>최적화")
+        direction TB
+        G("경주시 100m 격자 공간<br>필터링 및 후보지 도출") --> H("Gurobi Multi-Stage<br>최적화")
         H --> I["최적 AI 데이터센터<br>부지 선정 및 ESS 용량 산정"]
     end
+
+    %% 서브그래프 간의 연결
+    C --> D
+    F --> G
 ```
 
 #### ⚙️ Phase 1 & Task 1 : 물리 법칙 기반 데이터 역추적 및 마스킹 컬럼 재식별
