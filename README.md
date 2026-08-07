@@ -88,9 +88,9 @@ flowchart TD
     end
 
     subgraph Phase 2 [Phase 2: 풍력 발전량 예측]
-        C --> D(도메인 지식 기반 피처 엔지니어링)
-        D --> E(LightGBM 활용 발전량 예측 모델링)
-        E --> F[12월 10분 단위 풍력 잉여전력 도출]
+        C --> D("도메인 지식 기반<br>피처 엔지니어링")
+        D --> E("LightGBM 활용<br>발전량 예측 모델링")
+        E --> F["12월 10분 단위<br>풍력 잉여전력 도출"]
     end
 
     subgraph Phase 3 [Phase 3: 입지 및 ESS 최적화]
