@@ -305,6 +305,8 @@ flowchart LR
 | **ESS 필요용량**| 16.098 MWh | 24.148 MWh | **총 ESS 용량: 40.246 MWh** |
 | **ESS 설치비용**| 32.20억 원 | 48.29억 원 | **총 ESS 비용: 80.49억 원 (19.51억 절감)** |
 
+<img width="833" height="795" alt="image" src="https://github.com/user-attachments/assets/499e1ae5-0620-4485-a391-6a0b45236c20" />
+
 * **타당성 검증**: 농업용수 수요(농경지 밀집도)를 목적함수에 추가 반영하여 최적화를 재수행한 결과, 기존 최적 부지와 동일한 입지가 도출되어 시뮬레이션의 높은 견고성을 검증함.
 
 **2) ESS 예산 증설 시뮬레이션 (Sensitivity Analysis)**
