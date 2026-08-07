@@ -109,7 +109,7 @@ flowchart TD
         G --> H(Gurobi Multi-Stage 최적화)
         H --> I[최적 AI 데이터센터 부지 선정 및 ESS 용량 산정]
     end
-
+```
 #### ⚙️ Phase 1 & Task 1 : 물리 법칙 기반 데이터 역추적 및 마스킹 컬럼 재식별
 * **물리 법칙 기반 데이터 역추적(Reversing)**:
   * **이상기체 방정식($P = \rho RT$)**: 기온 및 기압 블라인드 변수의 비선형 관계를 추론하여 대기 밀도(`air_density_calc`) 파생변수 생성.
