@@ -358,19 +358,19 @@ flowchart LR
 
 ```bash
 # 1) 리포지토리 클론 및 프로젝트 폴더 이동
-git clone [https://github.com/ParkMinhyoung/FIELD-CAMP-1st-Place.git](https://github.com/ParkMinhyoung/FIELD-CAMP-1st-Place.git)
+git clone https://github.com/ParkMinhyoung/FIELD-CAMP-1st-Place.git
 cd FIELD-CAMP-1st-Place
 
-# 2) 가상환경 생성 및 활성화 (권장)
+# 2) 가상환경 생성 및 활성화 (선택)
 python -m venv venv
-# Windows:
-source venv/Scripts/activate
-# Mac/Linux:
-# source venv/bin/activate
+# Windows: source venv/Scripts/activate
+# Mac/Linux: source venv/bin/activate
 
-# 3) 필수 라이브러리 일괄 설치
-pip install --upgrade pip
-pip install pandas numpy lightgbm optuna scikit-learn gurobipy matplotlib seaborn jupyter
+# 3) 필수 라이브러리 설치 (가로 스크롤 방지 줄바꿈)
+pip install pandas numpy lightgbm optuna \
+            scikit-learn gurobipy matplotlib seaborn jupyter
+---
+
 ```
 ### 🚀 2. 파이프라인 실행 가이드 (Execution Pipeline)
 
