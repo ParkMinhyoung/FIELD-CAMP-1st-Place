@@ -344,26 +344,33 @@ flowchart LR
 
 ---
 
+## 🛠️ 6. 환경 설정 및 실행 가이드 (Quick Start)
 
-## 6. 🛠️ 환경 설정 및 실행 방법 (How to Run)
-
-> [!NOTE]
-> 본 프로젝트는 **Python 3.12+** 및 **Gurobi Optimizer** (Academic / Commercial License) 환경에서 작성되었습니다.
+> [!IMPORTANT]
+> * **권장 환경**: Python 3.12 이상
+> * **최적화 솔버**: **Gurobi Optimizer** (Phase 3 입지 최적화 실행을 위해 Academic/Commercial 라이선스 필요)
 
 ---
 
-### 💻 1. 설치 및 환경 구축 (Installation)
+### 💻 1. 환경 구축 및 패키지 설치 (Installation)
 
-터미널(Cmd 또는 Git Bash)에서 아래 명령어를 순서대로 실행합니다.
+터미널(Cmd, PowerShell, Git Bash)에서 아래 명령어를 순서대로 실행합니다.
 
 ```bash
-# 1. 리포지토리 클론 & 폴더 이동
+# 1) 리포지토리 클론 및 프로젝트 폴더 이동
 git clone [https://github.com/ParkMinhyoung/FIELD-CAMP-1st-Place.git](https://github.com/ParkMinhyoung/FIELD-CAMP-1st-Place.git)
 cd FIELD-CAMP-1st-Place
 
-# 2. 필요 패키지 일괄 설치
+# 2) 가상환경 생성 및 활성화 (권장)
+python -m venv venv
+# Windows:
+source venv/Scripts/activate
+# Mac/Linux:
+# source venv/bin/activate
+
+# 3) 필수 라이브러리 일괄 설치
+pip install --upgrade pip
 pip install pandas numpy lightgbm optuna scikit-learn gurobipy matplotlib seaborn jupyter
----
 ```
 ### 🚀 2. 파이프라인 실행 가이드 (Execution Pipeline)
 
