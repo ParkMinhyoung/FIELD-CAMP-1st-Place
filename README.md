@@ -132,6 +132,26 @@ flowchart LR
 
 ### ⚙️ Phase 2: 풍력 발전량 예측 모델링
 
+### 📊 Model Benchmark & Feature Iterations
+
+**1) 모델별 Walk-forward 교차검증 성능 비교 (3-Fold Avg)**
+| Model | Sept NMAE | Oct NMAE | Nov NMAE | Mean NMAE | 비고 |
+| :--- | :---: | :---: | :---: | :---: | :--- |
+| **LightGBM (Final)** | **0.022** | **0.128** | **0.063** | **0.071** | **최종 단일 모델 채택** |
+| Extra Trees | 0.043 | 0.123 | 0.108 | 0.092 | Hidden Stop 2-Stage 보정 |
+| Random Forest | 0.027 | 0.133 | 0.134 | 0.099 | Expanding-Window 적용 |
+| LSTM | 0.064 | 0.157 | 0.132 | 0.119 | Sequence Time-step 튜닝 |
+
+* **앙상블 검증**: LightGBM(95%) + Extra Trees(5%) 조합 시 NMAE 0.0711로 단일 LightGBM(0.0714) 대비 개선폭이 0.0003에 불과하여 복잡도를 낮추고 재현성을 높이기 위해 **LightGBM 단독 모델** 채택.
+
+**2) 도메인 피처 결합 단계별 Test NMAE (12월 실제 평가)**
+| Version | Feature Engineering Strategy | Test NMAE | 비고 |
+| :--- | :--- | :---: | :--- |
+| **Baseline (v1)** | 기본 식별 변수만 적용 | 0.0944 | 초기 모델 |
+| **v2 (Final)** | **정비주기(70일) + 저온(-10°C) 성능저하 피처** | **0.0934** | **최종 채택 (NMAE 21.91% → 9.34% 개선)** |
+| v3 | 정비주기 + 저온(-7°C) 정밀 조정 | 0.0936 | 과적합 우려로 제외 |
+| v4 | 정비주기 + 저온(-10°C) + 저기압/폭풍방향 | 0.0942 | 노이즈 증가로 성능 하락 |
+
 1. **도메인 지식 기반 피처 식별 (Task 1)**
    - Phase 1에서 탐구한 풍력 발전 물리 법칙 및 기상(기온, 기압) 요인 분석 결과 활용.
    - 익명화(Masking)된 `Feature_1~18` 컬럼을 물리적 인과관계에 기반하여 나셀 풍속, 나셀 풍향(sin/cos), 기온, 기압, 로터 회전수 등으로 논리적 재식별.
