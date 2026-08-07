@@ -368,38 +368,31 @@ cd FIELD-CAMP-1st-Place
 
 # 2. 필요 패키지 일괄 설치
 pip install pandas numpy lightgbm optuna scikit-learn gurobipy matplotlib seaborn jupyter
-
+```
 
 ---
+### 🚀 2. 파이프라인 실행 가이드 (Execution Pipeline)
 
-🚀 2. 파이프라인 실행 가이드 (Execution Pipeline)💡 Tip: 실행 파일명 링크를 클릭하면 해당 주피터 노트북 코드로 이동합니다.단계주요 과제실행 파일 (.ipynb)필요 입력 데이터최종 출력 결과물Phase 2풍력 발전량 예측📄 Phase2_Task2_코드 파일_14B.ipynbtrain(1월~11월).csvtrain(12월).csv12월 10분 단위 유효전력생산량 예측 CSVPhase 3입지 & ESS 최적화📄 Phase3_최적화 코드 파일_14B.ipynbterrain_grid_100m.csvsubstation_locations.csvgyeongju_boundary.csvAI 데이터센터 최적 부지 리포트 & ESS 시뮬레이션
+> **💡 Tip**: 실행 파일명 링크를 클릭하면 해당 주피터 노트북 코드로 이동합니다.
 
+| 단계 | 주요 과제 | 실행 파일 (`.ipynb`) | 필요 입력 데이터 | 최종 출력 결과물 |
+| :---: | :--- | :--- | :--- | :--- |
+| **Phase 2** | **풍력 발전량 예측** | 📄 [`Phase2_Task2_코드 파일_14B.ipynb`](./Phase2_Task2_코드%20파일_14B.ipynb) | `train(1월~11월).csv`<br>`train(12월).csv` | 12월 10분 단위 유효전력생산량 예측 CSV |
+| **Phase 3** | **입지 & ESS 최적화** | 📄 [`Phase3_최적화 코드 파일_14B.ipynb`](./Phase3_최적화%20코드%20파일_14B.ipynb) | `terrain_grid_100m.csv`<br>`substation_locations.csv`<br>`gyeongju_boundary.csv` | AI 데이터센터 최적 부지 리포트 & ESS 시뮬레이션 |
 
 
 ### 🖥️ 3. CLI 터미널 실행 (선택 사항)
 
-
-
 주피터 UI 없이 터미널(cmd)에서 명령어로 직접 자동 실행할 때 사용합니다.
 
-
-
 ```bash
-
 # Phase 2 노트북 커널 실행
-
 jupyter nbconvert --to notebook --execute "Phase2_Task2_코드 파일_14B.ipynb"
 
-
-
 # Phase 3 노트북 커널 실행
-
 jupyter nbconvert --to notebook --execute "Phase3_최적화 코드 파일_14B.ipynb"
 
 ```
-
-
-
 ---
 
 
