@@ -11,7 +11,7 @@
 ### 👥 Role & Business Impact
 
 
-* **팀 구성**: 2026 FIELD CAMP 14B조 (8명) / **대상(1st Place) 수상**
+* **팀 구성**: 2026 FIELD CAMP 14B조 (8명) / **최우수상(1st Place) 수상**
 
 * **핵심 기여**:
 
