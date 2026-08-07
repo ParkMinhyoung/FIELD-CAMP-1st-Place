@@ -83,23 +83,16 @@
 ---
 
 
-## 2. 기술 스택
+## 2. 🛠️ 기술 스택 (Tech Stack)
 
-
-| 구 분 | 기술 / 라이브러리 |
-
-| :--- | :--- |
-
-| **언어** | Python 3.12+ |
-
-| **데이터 처리** | Pandas, NumPy |
-
-| **머신러닝 / 예측** | LightGBM, Optuna, Scikit-learn |
-
-| **수리 최적화** | Gurobi (`gurobipy`) |
-
-| **시각화** | Matplotlib, Seaborn |
-
+| 구분 | 기술 / 라이브러리 | 사용 목적 |
+| :--- | :--- | :--- |
+| **Language** | `Python 3.12+` | 메인 개발 언어 |
+| **Data Processing** | `Pandas`, `NumPy` | 시계열/SCADA 데이터 전처리 및 피처 엔지니어링 |
+| **ML & Modeling** | `LightGBM`, `Optuna`, `Scikit-learn` | 발전량 예측 모델링, 교차 검증 및 하이퍼파라미터 튜닝 |
+| **Optimization** | `Gurobi (gurobipy)` | Stage 1, 2 수리 최적화 (입지 선정 & ESS 용량 산정) |
+| **Visualization** | `Matplotlib`, `Seaborn` | 시계열 분석, 분포 확인 및 최종 리포트 시각화 |
+| **Environment** | `Jupyter Notebook`, `CLI` | 인터랙티브 실험 및 자동화 실행 환경 |
 
 ---
 
