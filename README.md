@@ -75,7 +75,7 @@
 
 **✨ Key Achievements**
 
-- 실증 테스트 기준 **NMAE 0.0934** 달성 (v6 모델 채택)
+- 실증 테스트 기준 **NMAE 0.0934** 달성 (v2 모델 채택)
 
 - AI 데이터센터 전력 충당률 극대화를 위한 **ESS 최적 용량 산정 및 부지 도출**
 
@@ -246,12 +246,8 @@ flowchart LR
 
 
 4. **Data Leakage 차단 및 모델 검증 (Walk-forward CV)**
-
    - `op_switch`, `forced_stop_min` 등 과거 타겟값을 내포하거나 사후에만 알 수 있는 집계 컬럼을 원천 제외하여 Data Leakage 차단.
-
-   - 시계열 구조에 맞춘 Walk-forward CV 검증 수행 및 최종 실증 평가셋(12월) 기준 **v6 모델 (NMAE 0.0934)** 최종 채택.
-
-
+   - 시계열 구조에 맞춘 Walk-forward CV 검증 수행 및 최종 실증 평가셋(12월) 기준 **v2 모델 (NMAE 0.0934)** 최종 채택.
 
 ---  
 
