@@ -356,7 +356,7 @@ flowchart LR
 
 터미널(Cmd, PowerShell, Git Bash)에서 아래 명령어를 순서대로 실행합니다.
 
-```bash
+
 # 1) 리포지토리 클론 및 프로젝트 폴더 이동
 git clone https://github.com/ParkMinhyoung/FIELD-CAMP-1st-Place.git
 cd FIELD-CAMP-1st-Place
@@ -371,7 +371,7 @@ pip install pandas numpy lightgbm optuna \
             scikit-learn gurobipy matplotlib seaborn jupyter
 ---
 
-```
+
 ### 🚀 2. 파이프라인 실행 가이드 (Execution Pipeline)
 
 > **💡 Tip**: 실행 파일명 링크를 클릭하면 해당 주피터 노트북 코드로 이동합니다.
@@ -386,7 +386,7 @@ pip install pandas numpy lightgbm optuna \
 
 주피터 UI 없이 터미널(cmd)에서 명령어로 직접 자동 실행할 때 사용합니다.
 
-```bash
+
 # Phase 2 노트북 커널 실행
 jupyter nbconvert --to notebook --execute "Phase2_Task2_코드 파일_14B.ipynb"
 
@@ -395,7 +395,7 @@ jupyter nbconvert --to notebook --execute "Phase3_최적화 코드 파일_14B.ip
 
 ```
 ---
-
+```
 
 
 ## 7. Contact
