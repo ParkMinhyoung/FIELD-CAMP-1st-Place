@@ -83,7 +83,7 @@
 ```mermaid
 flowchart TD
     subgraph Phase 1 [Phase 1: 물리 법칙 기반 데이터 역추적]
-        A[SCADA 및 기상 블라인드 데이터] --> B(물리 법칙 기반 데이터 역추적)
+        A["SCADA 및 기상<br>블라인드 데이터"] --> B("물리 법칙 기반<br>데이터 역추적")
         B --> C(익명화 마스킹 컬럼 재식별)
     end
 
