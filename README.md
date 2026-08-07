@@ -351,7 +351,7 @@ flowchart LR
 
 ```bash
 # 1. 리포지토리 클론 및 폴더 이동
-git clone https://github.com/ParkMinhyoung/FIELD-CAMP-1st-Place.git
+git clone(https://github.com/ParkMinhyoung/FIELD-CAMP-1st-Place.git)
 cd FIELD-CAMP-1st-Place
 
 # 2. 필요 패키지 일괄 설치
