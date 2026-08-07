@@ -39,7 +39,10 @@
   * **Phase 2**: SCADA 센서 데이터 및 환경 변수를 활용하여 12월 10분 단위 유효전력생산량(kWh)을 고도화된 머신러닝 모델로 예측.
   * **Phase 3**: 예측된 풍력 잉여전력 프로파일을 바탕으로 경주시 내 최적 부지를 선정하고, Gurobi 수리 최적화를 통해 AI 데이터센터 전력 충당을 위한 ESS 용량을 산정.
 
-
+**✨ Key Achievements**
+- 실증 테스트 기준 **NMAE 0.0934** 달성 (v6 모델 채택)
+- AI 데이터센터 전력 충당률 극대화를 위한 **ESS 최적 용량 산정 및 부지 도출**
+  
 ---
 
 
@@ -108,7 +111,7 @@ flowchart LR
   * **이상기체 방정식($P = \rho RT$)**: 기온 및 기압 블라인드 변수의 비선형 관계를 추론하여 대기 밀도(`air_density_calc`) 파생변수 생성.
   * **Betz's Law & 유효 풍속**: 나셀 풍속과 요 정렬 오차(`yaw_misalign`)를 결합하여 풍력 에너지 플럭스(`wind_power_flux`) 산출.
 * **익명화(Masking) 컬럼 재식별**:
-  * $sin^2 + cos^2 = 1$ 원형 패턴 분석을 통해 `Feature_10`, `Feature_15`를 풍향 sin/cos 벡터로 식별 및 각도(Degree) 복원.
+  * $\sin^2\theta + \cos^2\theta = 1$ 원형 패턴 분석을 통해 `Feature_10`, `Feature_15`를 풍향 sin/cos 벡터로 식별 및 각도(Degree) 복원.
 
 ### ⚙️ Phase 2: 풍력 발전량 예측 모델링
 
