@@ -94,9 +94,9 @@ flowchart TD
     end
 
     subgraph Phase 3 [Phase 3: 입지 및 ESS 최적화]
-        F --> G(경주시 100m 격자 공간 필터링 및 후보지 도출)
+        F --> G("경주시 100m 격자 공간<br>필터링 및 후보지 도출")
         G --> H(Gurobi Multi-Stage 최적화)
-        H --> I[최적 AI 데이터센터 부지 선정 및 ESS 용량 산정]
+        H --> I["최적 AI 데이터센터<br>부지 선정 및 ESS 용량 산정"]
     end
 ```
 #### ⚙️ Phase 1 & Task 1 : 물리 법칙 기반 데이터 역추적 및 마스킹 컬럼 재식별
