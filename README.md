@@ -343,14 +343,13 @@ flowchart LR
 
 
 ---
-
 ### 💻 6. 환경 구축 및 패키지 설치 (Installation)
 
-터미널(Cmd, PowerShell, Git Bash)에서 아래 명령어를 순서대로 실행합니다.
+### 1. 터미널(Cmd, PowerShell, Git Bash)에서 아래 명령어를 순서대로 실행합니다.
 
-```bash```
+
 # 1) 리포지토리 클론 및 프로젝트 폴더 이동
-git clone [https://github.com/ParkMinhyoung/FIELD-CAMP-1st-Place.git](https://github.com/ParkMinhyoung/FIELD-CAMP-1st-Place.git)
+git clone https://github.com/ParkMinhyoung/FIELD-CAMP-1st-Place.git
 cd FIELD-CAMP-1st-Place
 
 # 2) 가상환경 생성 및 활성화 (선택)
