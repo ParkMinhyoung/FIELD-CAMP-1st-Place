@@ -315,6 +315,10 @@ flowchart LR
 | 150억 원 | 100MW | 50MW 2기 | 55.740 MWh | 111.48억 원 | 용량 정체 구간 |
 | 200억 원 | 110MW | 30MW 2기 + 50MW 1기 | 76.858 MWh | 153.72억 원 | 추가 송전선 비용 발생 |
 
+<img width="833" height="795" alt="image" src="https://github.com/user-attachments/assets/499e1ae5-0620-4485-a391-6a0b45236c20" />
+
+
+
 > **Key Insight**: 입지 확장을 제약하는 핵심 병목은 **ESS 예산**이며, ESS 예산을 **20억 원 증액(120억 원 확보)** 할 때 용량이 80MW에서 100MW로 늘어나 한계 효용이 가장 극대화됩니다.
 
 ---
