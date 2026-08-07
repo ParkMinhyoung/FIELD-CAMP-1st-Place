@@ -39,7 +39,7 @@
   * **Phase 2**: SCADA 센서 데이터 및 환경 변수를 활용하여 12월 10분 단위 유효전력생산량(kWh)을 고도화된 머신러닝 모델로 예측.
   * **Phase 3**: 예측된 풍력 잉여전력 프로파일을 바탕으로 경주시 내 최적 부지를 선정하고, Gurobi 수리 최적화를 통해 AI 데이터센터 전력 충당을 위한 ESS 용량을 산정.
 
-📄 **[FIELD CAMP 최우수상 최종 발표자료 (PDF) 바로보기](./docs/FIELD_CAMP_1st_Place_Presentation.pdf)**
+📄 **[FIELD CAMP 최우수상 최종 발표자료 (PDF) 바로보기](./FIELD_CAMP_1st_Place_Presentation.pdf)**
 
 **✨ Key Achievements**
 - 실증 테스트 기준 **NMAE 0.0934** 달성 (v6 모델 채택)
