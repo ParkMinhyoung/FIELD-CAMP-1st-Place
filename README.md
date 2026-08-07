@@ -343,23 +343,22 @@ flowchart LR
 
 
 ---
-### 💻 6. 환경 구축 및 패키지 설치 (Installation)
+## 6. 🛠️ 환경 설정 및 실행 방법 (How to Run)
 
-### 1. 터미널(Cmd, PowerShell, Git Bash)에서 아래 명령어를 순서대로 실행합니다.
+### 💻 1. 환경 구축 및 패키지 설치 (Installation)
 
+터미널(Cmd 또는 Git Bash)에서 아래 명령어를 순서대로 실행합니다.
 
-# 1) 리포지토리 클론 및 프로젝트 폴더 이동
-git clone https://github.com/ParkMinhyoung/FIELD-CAMP-1st-Place.git
+```bash
+# 1. 리포지토리 클론 및 폴더 이동
+git clone [https://github.com/ParkMinhyoung/FIELD-CAMP-1st-Place.git](https://github.com/ParkMinhyoung/FIELD-CAMP-1st-Place.git)
 cd FIELD-CAMP-1st-Place
 
-# 2) 가상환경 생성 및 활성화 (선택)
-python -m venv venv
-# Windows: source venv/Scripts/activate
-# Mac/Linux: source venv/bin/activate
-
-# 3) 필수 라이브러리 일괄 설치
+# 2. 필요 패키지 일괄 설치
 pip install pandas numpy lightgbm optuna scikit-learn gurobipy matplotlib seaborn jupyter
+```
 
+---
 
 ### 🚀 2. 파이프라인 실행 가이드 (Execution Pipeline)
 
@@ -370,21 +369,21 @@ pip install pandas numpy lightgbm optuna scikit-learn gurobipy matplotlib seabor
 | **Phase 2** | **풍력 발전량 예측** | 📄 [`Phase2_Task2_코드 파일_14B.ipynb`](./Phase2_Task2_코드%20파일_14B.ipynb) | `train(1월~11월).csv`<br>`train(12월).csv` | 12월 10분 단위 유효전력생산량 예측 CSV |
 | **Phase 3** | **입지 & ESS 최적화** | 📄 [`Phase3_최적화 코드 파일_14B.ipynb`](./Phase3_최적화%20코드%20파일_14B.ipynb) | `terrain_grid_100m.csv`<br>`substation_locations.csv`<br>`gyeongju_boundary.csv` | AI 데이터센터 최적 부지 리포트 & ESS 시뮬레이션 |
 
+---
 
 ### 🖥️ 3. CLI 터미널 실행 (선택 사항)
 
 주피터 UI 없이 터미널(cmd)에서 명령어로 직접 자동 실행할 때 사용합니다.
 
-
+```bash
 # Phase 2 노트북 커널 실행
 jupyter nbconvert --to notebook --execute "Phase2_Task2_코드 파일_14B.ipynb"
 
 # Phase 3 노트북 커널 실행
 jupyter nbconvert --to notebook --execute "Phase3_최적화 코드 파일_14B.ipynb"
+```
 
-```
 ---
-```
 
 
 ## 7. Contact
